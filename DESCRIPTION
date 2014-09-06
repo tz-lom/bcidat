@@ -1,11 +1,13 @@
-Package: BCI2000
+Package: bcidat
 Type: Package
-Title: What the package does (short line)
-Version: 1.0
+Title: Works with BCI2000 .dat files
+Version: 0.3
 Date: 2014-09-04
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: GPL-2
-Imports: Rcpp (>= 0.11.2)
+Author: Nuzhdin Yury
+Maintainer: Nuzhdin Yury <nuzhdin.urii@gmail.com>
+Description: Based on code of BCI2000 platform, this package allows you to load
+    .dat files recorded with BCI2000
+License: GPL-3
+Imports:
+    Rcpp (>= 0.11.2)
 LinkingTo: Rcpp

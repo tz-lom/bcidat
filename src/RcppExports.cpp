@@ -6,15 +6,15 @@
 using namespace Rcpp;
 
 // load_bcidat
-Rcpp::List load_bcidat(std::string fname, bool raw);
-RcppExport SEXP BCI2000_load_bcidat(SEXP fnameSEXP, SEXP rawSEXP) {
+Rcpp::List load_bcidat(std::string file, bool raw = false);
+RcppExport SEXP bcidat_load_bcidat(SEXP fileSEXP, SEXP rawSEXP) {
 BEGIN_RCPP
     SEXP __sexp_result;
     {
         Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< std::string >::type fname(fnameSEXP );
+        Rcpp::traits::input_parameter< std::string >::type file(fileSEXP );
         Rcpp::traits::input_parameter< bool >::type raw(rawSEXP );
-        Rcpp::List __result = load_bcidat(fname, raw);
+        Rcpp::List __result = load_bcidat(file, raw);
         PROTECT(__sexp_result = Rcpp::wrap(__result));
     }
     UNPROTECT(1);

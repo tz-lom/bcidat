@@ -7,13 +7,13 @@ SEXP paramListToSEXP(const ParamList &list);
 SEXP paramToSEXP(const Param &list);
 
 // [[Rcpp::export]]
-Rcpp::List load_bcidat(std::string fname, bool raw)
+Rcpp::List load_bcidat(std::string file, bool raw=false)
 {
   BCI2000FileReader reader;
-  reader.Open(fname.c_str());
+  reader.Open(file.c_str());
   if(!reader.IsOpen())
   {
-    reader.Open((fname+".dat").c_str());
+    reader.Open((file+".dat").c_str());
     if(!reader.IsOpen())
     return Rcpp::List();
   }

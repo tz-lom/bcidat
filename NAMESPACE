@@ -1,0 +1,3 @@
+useDynLib(BCI2000)
+exportPattern("^[[:alpha:]]+")
+importFrom(Rcpp, evalCpp)

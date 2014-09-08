@@ -35,6 +35,7 @@
 #include <exception>
 #include <sstream>
 #include <typeinfo>
+#include <stdexcept>
 #include "Compiler.h"
 
 #define STR_(x) STR__(x)

@@ -88,7 +88,7 @@ State::FromDefinition( const string& inDefinition )
     return true;
   string s = inDefinition + " 0 0";
   istringstream str2( s );
-  return ReadFromStream( str2 );
+  return static_cast<bool>(ReadFromStream( str2 ));
 }
 
 // **************************************************************************

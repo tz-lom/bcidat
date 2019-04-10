@@ -129,7 +129,7 @@ ParamList::Add( const string& inLine )
   Param param;
   if( linestream >> param )
     ByName( param.Name() ) = param;
-  return linestream;
+  return static_cast<bool>(linestream);
 }
 
 // **************************************************************************

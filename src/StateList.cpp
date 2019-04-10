@@ -148,7 +148,7 @@ StateList::Add( const string& inDefinition )
     else
       Add( s );
   }
-  return line;
+  return static_cast<bool>(line);
 }
 
 // **************************************************************************
